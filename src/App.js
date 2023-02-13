@@ -1,23 +1,30 @@
 // import logo from "./logo.svg";
 import "./App.css";
-import pic from "./logo.jpg";
+
+import myLogo from "./logo.jpg";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Navbar from "./components/Navbar";
+import Home from "./components/Home";
+import About from "./components/About/index.js";
+import Booking from "./components/Booking/index.js";
+import React from "react";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={pic} className="App-logo" alt="logo" />
-        <p>Hello World</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          COMING SOON...
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <div className="App">
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Navbar />}>
+              <Route index element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/booking" element={<Booking />} />
+            </Route>
+          </Routes>
+        </BrowserRouter>
+      </div>
+    </React.Fragment>
   );
 }
 
