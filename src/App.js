@@ -1,7 +1,7 @@
 // import logo from "./logo.svg";
 import "./App.css";
 
-import myLogo from "./logo.jpg";
+//import myLogo from "./logo.jpg";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./components/Navbar";
