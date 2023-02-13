@@ -1,5 +1,5 @@
 import React from "react";
-import myLogo from "../../logo.jpg";
+// import myLogo from "../../logo.jpg";
 import { Outlet, Link } from "react-router-dom";
 import "./Navbar.css";
 
@@ -9,7 +9,7 @@ const Navbar = () => {
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
           <Link className="brand-logo" to="/">
-            <img src={myLogo} width="100" length="50"></img>
+            {/* <img src={myLogo} width="100" length="50"></img> */}
           </Link>
           <button
             className="navbar-toggler"
