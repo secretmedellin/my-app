@@ -9,6 +9,9 @@ import Home from "./components/Home";
 import About from "./components/About/index.js";
 import Booking from "./components/Booking/index.js";
 import React from "react";
+// import Modal from "react-modal";
+import Items from "./components/Items/index";
+// import ImageCarousel from "./components/ImageCarousel";
 
 function App() {
   return (
@@ -20,6 +23,7 @@ function App() {
               <Route index element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/booking" element={<Booking />} />
+              <Route path="/items" element={<Items />} />
             </Route>
           </Routes>
         </BrowserRouter>
